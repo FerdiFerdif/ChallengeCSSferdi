@@ -1,19 +1,19 @@
+html,body {
+  margin: 0;
+}
 
 ul {
     text-align: center;
-
     background-color: black;
     padding: 0px;
     margin: 0px;
 }
 
 li {
-    border: solid black 2px;
     display: block;
     background-color: black;
     padding: 10px;
     padding-left: 20px;
-    border-top: 0px solid white;
 }
 
 li a {
@@ -30,7 +30,7 @@ nav {
 }
 
 nav a:hover {
-    color: cadetblue;
+    color: ghostwhite;
 
 }
 
@@ -50,26 +50,54 @@ nav img {
 }
 
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 600px) {
     li {
         display: inline-block;
         border: none;
 
     }
     input {
-        float: left;
         display:none;
     }
 }
 
-@media screen and (max-width: 451px) {
+@media screen and (max-width: 599px) {
     #search {
-       margin-left: 150px;
+       margin-left: 170px;
     }
     
     nav li {
         text-align: left;
     }
+
+    nav li a {
+        margin-left: 5px;
+    }
 }
 
+div.background {
+    display: grid;
+    grid-auto-rows: minmax(925px, auto);
+    background-image: url("https://images6.alphacoders.com/405/405481.jpg");
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+div.title {
+    text-align: center;
+     margin-top: 75px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+div.lol {
+    text-align: center;
+    margin-top: 105px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#p {
+    font-size: 20px !important;
+}
 
