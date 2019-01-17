@@ -34,12 +34,19 @@ nav a:hover {
 
 }
 
-nav img {
-    margin-left: 150px;
+input {
+    color: grey;
+    font-family: 'Montserrat', sans-serif;
+    border:5px solid #000000;
+    border-radius:4px;
+    background-color: black;
+    outline-color: black;
+    float:left;
+
 }
 
-input {
-    color: black;
+nav img {
+
 }
 
 
@@ -51,10 +58,18 @@ input {
     }
     input {
         float: left;
-        visibility: hidden;
+        display:none;
     }
+}
 
-
+@media screen and (max-width: 451px) {
+    #search {
+       margin-left: 150px;
+    }
+    
+    nav li {
+        text-align: left;
+    }
 }
 
 
