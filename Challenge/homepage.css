@@ -1,0 +1,60 @@
+
+ul {
+    text-align: center;
+
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+}
+
+li {
+    border: solid black 2px;
+    display: block;
+    background-color: black;
+    padding: 10px;
+    padding-left: 20px;
+    border-top: 0px solid white;
+}
+
+li a {
+    color: grey;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+nav {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: cadetblue;
+
+}
+
+nav img {
+    margin-left: 150px;
+}
+
+input {
+    color: black;
+}
+
+
+@media screen and (min-width: 450px) {
+    li {
+        display: inline-block;
+        border: none;
+
+    }
+    input {
+        float: left;
+        visibility: hidden;
+    }
+
+
+}
+
+
