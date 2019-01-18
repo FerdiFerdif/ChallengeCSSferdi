@@ -83,24 +83,27 @@ div.lol {
 }
 
 div.title div.boxes {
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 300px 300px 300px ;
+    box-sizing: border-box;
     font-size: 24px;
-    grid-row-gap: 0.7em;
+    max-width: 100%;
+    text-align: center;
 
 }
 
 div.box1 {
-    box-sizing: border-box;
-    background: rgba(255,255,255,0.7);
-    width: 280px;
-    justify-self: right;
-    text-align: left;
-    padding: 20px;
+    margin: 0 auto;
+    max-width: 100%;
+    background: rgba(255,255,255,1);
+    width: 1000px;
+    padding: 0px;
+    height: 787px;
 
 }
 
+div.box1 section {
+    font-size: 40px;
+    padding: 30px;
+}
 
 @media screen and (min-width: 600px) {
     li {
@@ -115,7 +118,7 @@ div.box1 {
 
 @media screen and (max-width: 599px) {
     #search {
-        margin-left: 170px;
+        margin-left: 130px;
     }
 
     nav li {
@@ -127,32 +130,57 @@ div.box1 {
     }
 }
 
+div.box1 p {
+    font-size: 14px;
+    font-weight: normal;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: left;
+}
+
+div.box1 img {
+    margin-top: 20px;
+    width: 60%;
+    margin-bottom: 20px ;
+}
+
 @media screen and (max-width: 900px) {
-    div.title div.boxes {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 150px 150px 150px 150px;
-        font-size: 24px;
-        grid-gap: 1em;
+    div.box1 img {
+        min-width: 320px;
     }
 
-    div.box1 {
-        justify-self: center;
+    div.box1 p {
+        font-size: 14px;
+        margin-left: 110px;
+        margin-right: 110px;
     }
 }
 
-@media screen and (max-width: 599px) {
-    div.title div.boxes {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 150px 150px 150px 150px;
-        font-size: 24px;
-        grid-gap: 1em;
+
+@media screen and (max-width: 600px) {
+    div.box1 img {
+        min-width: 320px;
     }
 
-    div.box1 {
-        justify-self: center;
+    div.box1 p {
+        font-size: 14px;
+        margin-left: 70px;
+        margin-right: 70px;
     }
 }
+
+
+@media screen and (max-width: 450px) {
+    div.box1 img {
+          min-width: 300px;
+    }
+
+    div.box1 p {
+        font-size: 12px;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+}
+
 
 
