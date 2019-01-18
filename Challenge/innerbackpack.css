@@ -1,5 +1,8 @@
+
+
 html,body {
     margin: 0;
+
 }
 
 ::-webkit-scrollbar {
@@ -146,13 +149,32 @@ div.cool {
     color: grey;
     text-decoration: none;
     text-align: left;
-    margin-top: 125px;
+    margin-top: 50px;
     margin-left: 200px;
     margin-right: 200px;
     font-size: 14px;
-    font-weight: normal;
+    font-weight: lighter;
     color: grey;
 }
+
+div.cool2 {
+    float:right;
+    color: grey;
+    text-decoration: none;
+    text-align: right;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+div.cool3 {
+    width: 80px;
+    color: grey;
+    text-decoration: none;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+}
+
 
 hr {
     color: grey;
@@ -167,6 +189,46 @@ div.box1 img {
     width: 60%;
     margin-bottom: 20px ;
 }
+
+div.title div.block {
+    text-decoration: none;
+    color: grey;
+    position: absolute;
+    text-align: center;
+    background-color: white;
+    height: 50px;
+    width: 40px;
+    top: 550px;
+}
+
+div.title div.block2 {
+    overflow:auto;
+    float:right;
+    text-align: center;
+    background-color: white;
+    height: 50px;
+    width: 40px;
+    margin-top: 368px;
+}
+
+div.block:hover {
+    text-decoration: none;
+}
+
+div.block2:hover {
+    text-decoration: none;
+}
+
+#within {
+    position: relative;
+    top: 35px;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+    color: grey;
+    padding: 10px;
+}
+
 
 @media screen and (max-width: 900px) {
     div.box1 img {
@@ -187,6 +249,25 @@ div.box1 img {
     div.cool {
         margin-left: 110px;
         margin-right: 110px;
+    }
+
+    div.cool2 {
+        margin-left: 110px;
+        margin-right: 110px;
+    }
+
+    div.cool3 {
+        margin-left: 110px;
+        margin-right: 110px;
+    }
+
+
+    div.block {
+        display: none;
+    }
+
+    div.block2 {
+        display: none;
     }
 }
 
@@ -211,12 +292,22 @@ div.box1 img {
         margin-left: 70px;
         margin-right: 70px;
     }
+
+    div.cool2 {
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    div.cool3 {
+        margin-left: 70px;
+        margin-right: 70px;
+    }
 }
 
 
 @media screen and (max-width: 450px) {
     div.box1 img {
-          min-width: 295px;
+        min-width: 310px;
     }
 
     div.box1 p {
@@ -234,8 +325,29 @@ div.box1 img {
         margin-left: 35px;
         margin-right: 35px;
     }
+
+    div.cool2 {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    div.cool3 {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
 }
 
+@media screen and (min-width: 900px) {
+    div.cool2 {
+        display: none;
+    }
 
+    div.cool3 {
+        display: none;
+    }
 
+    hr {
+        display: none;
+    }
+}
 
